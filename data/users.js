@@ -1,5 +1,3 @@
-import bcrypt from 'bcryptjs';
-
 export const users = [
 	{
 		_id: 'a',
@@ -9,7 +7,7 @@ export const users = [
 		email: 'admin@email.com',
 		fullname: 'Admin',
 		introduction: 'This is Admin user',
-		password: bcrypt.hashSync('123456', 10),
+		password: '123456',
 		phone: '0123456789',
 		isAdmin: true,
 	},
@@ -21,7 +19,7 @@ export const users = [
 		email: 'test@email.com',
 		fullname: 'Test User',
 		introduction: 'This is a test user',
-		password: bcrypt.hashSync('123456', 10),
+		password: '123456',
 		phone: '0123456789',
 		isAdmin: false,
 	},
@@ -33,7 +31,7 @@ export const users = [
 		email: 'admin@email.com',
 		fullname: 'Admin User',
 		introduction: 'This is a an admin',
-		password: bcrypt.hashSync('123456', 10),
+		password: '123456',
 		phone: '0987654321',
 		isAdmin: false,
 	},
