@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 
 import MainLayout from '../components/layouts/MainLayout';
 import styles from '../styles/Home.module.css';
-// import { videos } from '../data/videos';
 import { getPublicVideos } from '../redux/actions/videosActions';
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
 
 	useEffect(() => {
 		dispatch(getPublicVideos());
-	}, []);
+	}, [dispatch]);
 
 	return (
 		<MainLayout>

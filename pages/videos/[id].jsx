@@ -26,7 +26,7 @@ const VideoDetails = (props) => {
 
 	useEffect(() => {
 		dispatch(getPublicVideoDetail(props.id));
-	}, []);
+	}, [dispatch, props.id]);
 
 	return (
 		<MainLayout>

@@ -14,7 +14,7 @@ const MainLayout = ({ children, description, title }) => {
 
 	useEffect(() => {
 		dispatch(getUserFromStorage());
-	}, []);
+	}, [dispatch]);
 
 	const handleLogout = () => {
 		dispatch(logout());
